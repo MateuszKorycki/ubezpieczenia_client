@@ -1,0 +1,60 @@
+.Statistics {
+
+}
+.statistics-container{
+    width: 80%;
+    margin-left: 10%;
+    padding: 16px;
+    min-height: 84vh;
+}
+.Statistics h1 {
+    text-align: left;
+    background: black;
+    color: white;
+    border: 1px solid #efefef;
+    padding: 16px;
+    margin: 0 16px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Statistics__box ul {
+    list-style-type: none;
+}
+
+.Statistics__box-item {
+    background: #fff;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    margin: 16px;
+}
+
+.Statistics__box-item-title {
+    font-size: 16px;
+}
+
+.Statistics__box-item-description {
+    font-size: 14px;
+}
+
+.Statistics__box-item-author {
+    font-size: 12px;
+}
+
+.Statistics__filter-item {
+    margin: 16px;
+}
+
+.Statistics__filter-item select, .Statistics__filter-item input {
+    margin-top: 4px;
+    padding: 4px;
+}
+
+.Statistics__filter-item-label {
+    font-size: 12px;
+}
+
+.Statistics__filter-items {
+    display: flex;
+}

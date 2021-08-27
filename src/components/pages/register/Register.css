@@ -1,0 +1,90 @@
+
+
+
+.row-register{
+    min-width:350px;
+    max-width:80vw;
+    background-color: #ECECEC;
+    box-shadow: 10px 5px 10px 5px #888888;
+    padding: 20px;
+}
+.tab-header {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-header .r-title{
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    padding: 10px;
+
+}
+.tab-header .r-name{
+    font-size:x-large;
+    text-align: center;
+}
+
+
+.tab-content-register {
+    display: flex;
+    flex-direction: column;
+}
+
+.element-register{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+.form-element .r-quest{
+    text-align: center;
+}
+.form-element input {
+    width: 300px;
+    border:none;
+    border-bottom: 2px solid royalblue;
+    background-color: #ECECEC;
+    padding: 8px;
+    margin: 20px auto;
+    outline: none;
+
+}
+
+.form-element button {
+    padding: 12px;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    text-transform: uppercase;
+    margin: 25px auto;
+}
+@media (max-width: 960px) {
+    .row-register{
+        min-width:250px;}
+
+    .tab-header .r-title{
+        font-size: 1rem;
+
+    }
+    .tab-header .r-name{
+        font-size:0.8rem;
+        padding: 0.1rem;
+    }
+    .form-element .l-quest{
+        font-size: 0.8rem;
+    }
+    .form-element input {
+        max-width: 220px;
+        padding: 8px;
+        margin: 10px auto;
+        outline: none;
+
+    }
+    .form-element button {
+        padding: 12px;
+        margin: 25px auto;
+    }
+}

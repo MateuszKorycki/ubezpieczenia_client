@@ -1,0 +1,141 @@
+.Archives {
+
+}
+
+.Archives__form, .Archives__item-list, .Archives_title_container  {
+    width: 80%;
+    margin-left: 10%;
+    padding: 16px;
+}
+
+.Archives__form form {
+    width: 20%;
+    margin-left: 40%;
+}
+.Archives_title{
+    background: black;
+    color: white;
+    border: 1px solid #efefef;
+    padding: 16px;
+    margin: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Archives_title p{
+    text-transform: uppercase;
+    font-size: 26px;
+}
+.Archives__new-file-button {
+    margin-top: 8px;
+}
+.Archives_new-file-button{
+    width: 100%;
+    padding: 12px;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    min-width: min-content;
+}
+.Archives__item {
+    background: #fff;
+    border: 1px solid #efefef;
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Archives__item-name {
+    font-size: 24px;
+}
+
+.Archives__item-author {
+    font-size: 16px;
+}
+
+.Archives__item-info {
+    width: 90%;
+}
+
+.Archives__item-button {
+    display: inline-block;
+    width: 10%;
+
+}
+
+.row-archives{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+    width: 600px;
+    height: 350px;
+    background-color: #888888;
+    text-align: center;
+    font-weight: bold;
+}
+.row-archives p{
+    font-size: 32px;
+    padding-top: calc((350px - 32px)/2);
+}
+
+@media (max-width: 960px) {
+    .Archives__item-list{
+        height: 90vh;
+        width: 90vw;
+        margin-left: 2%;
+        padding: 16px;
+    }
+    .Archives__item {
+        background: #fff;
+        border: 1px solid #efefef;
+        padding: 2px;
+        margin: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Archives__item-name {
+        font-size: 24px;
+    }
+
+    .Archives__item-author {
+        font-size: 16px;
+    }
+
+    .Archives__item-info {
+        width: 90%;
+    }
+}
+@media (max-width: 1260px) {
+    .Archives__item-list{
+        height: 90vh;
+        width: 90vw;
+        margin-left: 2%;
+        padding: 16px;
+    }
+    .Archives__item {
+        background: #fff;
+        border: 1px solid #efefef;
+        padding: 2px;
+        margin: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Archives__item-name {
+        font-size: 24px;
+    }
+
+    .Archives__item-author {
+        font-size: 16px;
+    }
+
+    .Archives__item-info {
+        width: 90%;
+    }
+}

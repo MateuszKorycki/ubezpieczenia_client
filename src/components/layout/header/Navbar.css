@@ -1,0 +1,112 @@
+
+.nav-container{
+    background-color:#000;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 calc((100vw - 1280px) / 2);
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.nav-logo{
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: royalblue;
+}
+.nav-logo > p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: calc((60px - 20px) / 2);
+}
+.nav-menu{
+    display: flex;
+
+}
+
+.nv{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 20px;
+    height: 100%;
+    cursor: pointer;
+
+}
+.nv:hover{
+    color:royalblue;
+    border-top:5px solid transparent;
+    border-bottom: 5px solid royalblue;
+}
+.nv-login{
+    padding-left:120px;
+}
+.nv-plus{
+    color: royalblue;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px 20px;
+    cursor: pointer;
+
+}
+.nv-plus:hover{
+    color:white;
+    border-top:5px solid transparent;
+    border-bottom: 5px solid royalblue;
+}
+.bars{
+    display: none;
+    color: #fff;
+}
+.nickname-home{
+    color:white;
+    text-align: center;
+    padding-top: 22px;
+    margin-right: 20px;
+
+}
+
+
+@media (max-width: 960px) {
+    .nav-menu{
+        display: none;
+    }
+    .nav-logo > p{
+        font-size: 15px;
+        padding: calc((60px - 15px) / 2);
+    }
+    .bars{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+}
+@media (max-width: 1155px) {
+    .nav-logo > p{
+        font-size: 10px;
+        font-weight: bold;
+        padding: calc((60px - 10px) / 2);
+    }
+    .nav-menu{
+        font-size: 10px;
+
+    }
+
+}
+@media (max-width: 1200px) {
+    .nav-logo > p{
+        font-size: 15px;
+        font-weight: bold;
+        padding: calc((60px - 15px) / 2);
+    }
+    .nav-menu{
+        font-size: 15px;
+
+    }
+
+}
