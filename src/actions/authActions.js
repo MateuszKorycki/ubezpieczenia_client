@@ -7,7 +7,7 @@ import { ACTION_GET_ERRORS, ACTION_SET_THE_CURRENT_USER, ACTION_USER_LOADING } f
 
 export const _auctionRegisterUser_ = (userData, history) => dispatch => {
   axios
-    .post("/api/users/register", userData)
+    .post("https://ubezpieczenia-server.herokuapp.com/api/users/register", userData)
     .then(res => history.push("/login"))
     .catch(err =>
       dispatch({
@@ -20,7 +20,7 @@ export const _auctionRegisterUser_ = (userData, history) => dispatch => {
 
 export const _auctionLoginUser_ = userData => dispatch => {
   axios
-    .post("/api/users/login", userData)
+    .post("https://ubezpieczenia-server.herokuapp.com/api/users/login", userData)
     .then(res => {
       const { token } = res.data;
       localStorage.setItem("jwtToken", token);
