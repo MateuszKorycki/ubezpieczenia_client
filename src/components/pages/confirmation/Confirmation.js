@@ -16,7 +16,7 @@ class Confirmation extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`https://ubezpieczenia-server.herokuapp.com/api/users/`).then( res => {
+        axios.get(`https://ubezpieczenia-server.herokuapp.com/api/users`).then( res => {
             this.setState({users: res.data})
         }).catch(err => {
             console.log(err);
