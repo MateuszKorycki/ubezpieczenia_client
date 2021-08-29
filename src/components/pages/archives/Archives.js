@@ -40,7 +40,7 @@ const Archives = (props) => {
 
             axios({
                 method: "post",
-                url: "/api/archives",
+                url: "https://ubezpieczenia-server.herokuapp.com/api/archives",
                 data: formData,
                 headers: { "Content-Type": "multipart/form-data" },
             }).then(res => {
