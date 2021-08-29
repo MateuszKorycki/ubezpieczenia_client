@@ -10,7 +10,7 @@ const Archives = (props) => {
     const fileInputEl = useRef(null);
 
     useEffect(() => {
-        axios.get("/api/archives").then(res => {
+        axios.get("https://ubezpieczenia-server.herokuapp.com/api/archives").then(res => {
             setItems(res.data);
         });
     }, ['items']);

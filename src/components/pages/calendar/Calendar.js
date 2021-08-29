@@ -38,7 +38,7 @@ class Calendar extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`/api/meetings/${this.props.auth.user.id}`).then( res => {
+        axios.get(`https://ubezpieczenia-server.herokuapp.com/api/meetings/${this.props.auth.user.id}`).then( res => {
             this.setState({meetings: res.data});
         }).catch(err => {
             console.log(err);
