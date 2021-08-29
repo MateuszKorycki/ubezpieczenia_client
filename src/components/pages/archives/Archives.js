@@ -16,7 +16,7 @@ const Archives = (props) => {
     }, ['items']);
 
     const onDownloadClick = (name) => {
-        window.open(`https://ubezpieczenia-server.herokuapp.com/api/archives/download/${name}`)
+        window.open(`/api/archives/download/${name}`)
     }
 
     const onDeleteClick = (id) => {
@@ -40,7 +40,7 @@ const Archives = (props) => {
 
             axios({
                 method: "post",
-                url: "https://ubezpieczenia-server.herokuapp.com/api/archives",
+                url: "/api/archives",
                 data: formData,
                 headers: { "Content-Type": "multipart/form-data" },
             }).then(res => {
