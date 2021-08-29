@@ -16,7 +16,7 @@ class Confirmation extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`http://localhost:5000/api/users/`).then( res => {
+        axios.get(`https://ubezpieczenia-server.herokuapp.com/api/users/`).then( res => {
             this.setState({users: res.data})
         }).catch(err => {
             console.log(err);
@@ -32,7 +32,7 @@ class Confirmation extends React.Component {
     }
 
     onConfirmButtonClick(id) {
-        axios.put(`http://localhost:5000/api/users/confirm/${id}`).then(res => {
+        axios.put(`https://ubezpieczenia-server.herokuapp.com/api/users/confirm/${id}`).then(res => {
             window.location.reload(true);
         }).catch(err => {
             console.log(err);

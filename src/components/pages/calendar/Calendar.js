@@ -54,7 +54,7 @@ class Calendar extends React.Component {
             status: "active"
         };
 
-        axios.post("http://localhost:5000/api/meetings/add", data).then((res) => {
+        axios.post("https://ubezpieczenia-server.herokuapp.com/api/meetings/add", data).then((res) => {
             window.location.reload(true);
         }).catch(res => {
             console.log(res);
@@ -74,7 +74,7 @@ class Calendar extends React.Component {
     }
 
     onCancelEventClick(id) {
-        axios.put(`http://localhost:5000/api/meetings/cancel/${id}`).then(res => {
+        axios.put(`https://ubezpieczenia-server.herokuapp.com/api/meetings/cancel/${id}`).then(res => {
             window.location.reload(true);
         }).catch(res => {
             console.log(res.data)
@@ -82,7 +82,7 @@ class Calendar extends React.Component {
     }
 
     onEditEventClick() {
-        axios.put(`http://localhost:5000/api/meetings/edit/${this.state.pickedEvent.id}`, this.state.pickedEvent).then(res => {
+        axios.put(`https://ubezpieczenia-server.herokuapp.com/api/meetings/edit/${this.state.pickedEvent.id}`, this.state.pickedEvent).then(res => {
             window.location.reload(true);
             this.setState({showEditBox: false});
         }).catch(res => {

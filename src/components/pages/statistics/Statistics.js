@@ -17,13 +17,13 @@ class Statistics extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`http://localhost:5000/api/meetings/`).then( res => {
+        axios.get(`https://ubezpieczenia-server.herokuapp.com/api/meetings/`).then( res => {
             this.setState({meetings: res.data, meetingsCopy: res.data})
         }).catch(err => {
             console.log(err);
         });
 
-        axios.get(`http://localhost:5000/api/users/`).then( res => {
+        axios.get(`https://ubezpieczenia-server.herokuapp.com/api/users/`).then( res => {
             this.setState({users: res.data})
         }).catch(err => {
             console.log(err);

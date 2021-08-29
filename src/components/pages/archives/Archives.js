@@ -16,11 +16,11 @@ const Archives = (props) => {
     }, ['items']);
 
     const onDownloadClick = (name) => {
-        window.open(`http://localhost:5000/api/archives/download/${name}`)
+        window.open(`https://ubezpieczenia-server.herokuapp.com/api/archives/download/${name}`)
     }
 
     const onDeleteClick = (id) => {
-        axios.delete(`http://localhost:5000/api/archives/delete/${id}`).then(res => {
+        axios.delete(`https://ubezpieczenia-server.herokuapp.com/api/archives/delete/${id}`).then(res => {
             window.location.reload(true);
         }).catch(res => {
             console.log(res);

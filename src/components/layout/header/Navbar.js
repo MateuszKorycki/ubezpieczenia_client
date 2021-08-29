@@ -9,7 +9,7 @@ import axios from "axios";
 
 class Navbar extends Component {
     componentDidMount() {
-        axios.get(`http://localhost:5000/api/users/${this.props.auth.user.id}`).then( res => {
+        axios.get(`https://ubezpieczenia-server.herokuapp.com/api/users/${this.props.auth.user.id}`).then( res => {
             this.setState({role: res.data.role})
         }).catch(err => {
             console.log(err);
